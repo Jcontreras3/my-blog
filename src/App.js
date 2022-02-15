@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Routes, Route, BrowserRouter, Link } from "react-router-dom";
+//import NavBarComponent from './components/NavBarComponent';
+import { Nav, Navbar, Container } from "react-bootstrap";
+import BlogPage from "./components/BlogPage";
+import DashBoardPage from "./components/DashBoardPage";
+import AccountPage from "./components/AccountPage";
+import LoginPage from "./components/LoginPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar className="BgBlue">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Blog</Nav.Link>
+            <Nav.Link href="Login">Login</Nav.Link>
+            <Nav.Link href="Account">Account</Nav.Link>
+            <Nav.Link href="DashBoard">DashBoard</Nav.Link>
+          </Nav>
+          </Navbar>
+          <Routes>
+            <Route path="/" element={<BlogPage />} />
+            <Route path="Login" element={<LoginPage />} />
+            <Route path="Account" element={<AccountPage />} />
+            <Route path="DashBoard" element={<DashBoardPage />} />
+          </Routes>
+    </BrowserRouter>
   );
 }
 
