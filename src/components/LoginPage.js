@@ -6,42 +6,39 @@ import {
   Button,
   InputGroup,
   FormControl,
+  Card,
 } from "react-bootstrap";
+// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 export default function loginPage() {
   return (
     <Container>
-      <Row className="mt-5">
-        <Col className="text-center">
-          <h1>Login to your account</h1>
+      <Row>
+        <Col className="d-flex justify-content-center mt-5">
+          <Card style={{ width: "18rem" }}>
+            <Card.Title className="text-center mt-3">
+              Login to your account
+            </Card.Title>
+            <Card.Body>
+              <InputGroup className="mb-3">
+                <FormControl
+                  placeholder="Enter Email"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </InputGroup>
+              <InputGroup className="mb-3">
+                <FormControl
+                  placeholder="Enter In Password"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </InputGroup>
+              <Button className="mx-3 Positioning">Login</Button>
+              <Card.Link href="Account">Create Account?</Card.Link>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
-      <Row className="d-flex justify-content-center mt-5">
-        <Col lg={3}>
-          <InputGroup className="mb-3">
-            <FormControl
-              placeholder="Enter Your Email"
-              aria-label="Default"
-              aria-describedby="inputGroup-sizing-default"
-            />
-          </InputGroup>
-        </Col>
-      </Row>
-      <Row className="d-flex justify-content-center">
-        <Col lg={3}>
-          <InputGroup className="mb-3">
-            <FormControl
-              placeholder="Enter Your Password"
-              aria-label="Default"
-              aria-describedby="inputGroup-sizing-default"
-            />
-          </InputGroup>
-        </Col>
-      </Row>
-      <Row className="d-flex justify-content-center">
-        <Col lg={1}>
-          <Button>Login</Button>
-        </Col>
-      </Row>
-    </Container>
+      </Container>
   );
 }
