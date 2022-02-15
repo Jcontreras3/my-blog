@@ -14,10 +14,10 @@ function App() {
     <BrowserRouter>
       <Navbar className="BgBlue">
           <Nav className="me-auto">
-            <Nav.Link href="/">Blog</Nav.Link>
-            <Nav.Link href="Login">Login</Nav.Link>
-            <Nav.Link href="Account">Account</Nav.Link>
-            <Nav.Link href="DashBoard">DashBoard</Nav.Link>
+            <Nav.Link className="White" href="/">Blog</Nav.Link>
+            <Nav.Link className="White" href="Login">Login</Nav.Link>
+            <Nav.Link className="White" href="Account">Account</Nav.Link>
+            <Nav.Link className="White" href="DashBoard">DashBoard</Nav.Link>
           </Nav>
           </Navbar>
           <Routes>

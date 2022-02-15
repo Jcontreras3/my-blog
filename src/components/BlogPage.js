@@ -37,84 +37,76 @@ export default function BlogPage() {
       <Row>
         <Col>
           <Card className="mt-3" style={{ width: "18rem" }}>
-            <Card.Body>
-              <Card.Title className="text-center">Title</Card.Title>
-              <Card.Text>Publish Name</Card.Text>
-              <Card.Text>Date</Card.Text>
-              <img src="" alt />
+            <Card.Body className="BgBlue">
+              <Card.Title className="text-center White">Title</Card.Title>
+              <Card.Text className="White">Publish Name:</Card.Text>
+              <Card.Text className="White">Date:</Card.Text>
             </Card.Body>
+            <Card.Img variant="footer" src={Blog} />
           </Card>
         </Col>
-        <Col>
+        <Col lg={6}>
           <Card className="mt-3">
-            <Card.Body>
-              <Card.Text>
-                <Card.Title className="text-center">Description</Card.Title>
-              </Card.Text>
+            <Card.Body className="BgBlue">          
+                <Card.Title className="text-center White">Description</Card.Title>
             </Card.Body>
           </Card>
         </Col>
       </Row>
       <Row>
-      <Col>
+        <Col lg={6}>
           <Card className="mt-3">
-            <Card.Body>
-              <Card.Text>
-                <Card.Title className="text-center">Description</Card.Title>
-              </Card.Text>
+            <Card.Body className="BgBlue">
+                <Card.Title className="text-center White">Description</Card.Title>
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col lg={6}>
           <Card className="mt-3" style={{ width: "18rem" }}>
-            <Card.Body>
-              <Card.Title className="text-center">Title</Card.Title>
-              <Card.Text>Publish Name</Card.Text>
-              <Card.Text>Date</Card.Text>
-              <img src="" alt />
+            <Card.Body className="BgBlue">
+              <Card.Title className="text-center White">Title</Card.Title>
+              <Card.Text className="White">Publish Name:</Card.Text>
+              <Card.Text className="White">Date:</Card.Text>
+            </Card.Body>
+            <Card.Img variant="footer" src={Blog} />
+          </Card>
+        </Col>
+      </Row>
+      <Row>
+        <Col lg={6}>
+          <Card className="mt-3" style={{ width: "18rem" }}>
+            <Card.Body className="BgBlue">
+              <Card.Title className="text-center White">Title</Card.Title>
+              <Card.Text className="White">Publish Name:</Card.Text>
+              <Card.Text className="White">Date:</Card.Text>
+            </Card.Body>
+            <Card.Img variant="footer" src={Blog} />
+          </Card>
+        </Col>
+        <Col lg={6}>
+          <Card className="mt-3">
+            <Card.Body className="BgBlue">
+                <Card.Title className="text-center White">Description</Card.Title>
             </Card.Body>
           </Card>
         </Col>
       </Row>
       <Row>
-        <Col>
-          <Card className="mt-3" style={{ width: "18rem" }}>
-            <Card.Body>
-              <Card.Title className="text-center">Title</Card.Title>
-              <Card.Text>Publish Name</Card.Text>
-              <Card.Text>Date</Card.Text>
-              <img src="" alt />
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
+        <Col lg={6}>
           <Card className="mt-3">
-            <Card.Body>
-              <Card.Text>
-                <Card.Title className="text-center">Description</Card.Title>
-              </Card.Text>
+            <Card.Body className="BgBlue">
+                <Card.Title className="text-center White">Description</Card.Title>
             </Card.Body>
           </Card>
         </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Card className="mt-3">
-            <Card.Body>
-              <Card.Text>
-                <Card.Title className="text-center">Description</Card.Title>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
+        <Col lg={6}>
           <Card className="mt-3" style={{ width: "18rem" }}>
-            <Card.Body>
-              <Card.Title className="text-center">Title</Card.Title>
-              <Card.Text>Publish Name</Card.Text>
-              <Card.Text>Date</Card.Text>
-              <img src="" alt />
+            <Card.Body className="BgBlue">
+              <Card.Title className="text-center White">Title</Card.Title>
+              <Card.Text className="White">Publish Name:</Card.Text>
+              <Card.Text className="White">Date:</Card.Text>
             </Card.Body>
+            <Card.Img variant="footer" src={Blog} />
           </Card>
         </Col>
       </Row>
