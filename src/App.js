@@ -16,7 +16,7 @@ function App() {
           <Nav className="me-auto">
             <Nav.Link className="White" href="/">Blog</Nav.Link>
             <Nav.Link className="White" href="Login">Login</Nav.Link>
-            <Nav.Link className="White" href="Account">Account</Nav.Link>
+            <Nav.Link className="White" href="Account">Create Account</Nav.Link>
             <Nav.Link className="White" href="DashBoard">DashBoard</Nav.Link>
           </Nav>
           </Navbar>
