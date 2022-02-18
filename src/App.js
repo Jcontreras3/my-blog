@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <Navbar className="BgBlue">
           <Nav className="me-auto">
-            <Nav.Link className="White" href="/"><h3>Blog</h3></Nav.Link>
+            <Nav.Link className="White" href="/"><button className="btn btn-light Blue">Blog</button></Nav.Link>
             <Nav.Link className="White" href="Login">Login</Nav.Link>
             <Nav.Link className="White" href="Account">Create Account</Nav.Link>
             <Nav.Link className="White" href="DashBoard">DashBoard</Nav.Link>
