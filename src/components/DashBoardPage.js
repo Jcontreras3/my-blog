@@ -195,7 +195,7 @@ export default function DashBoardPage() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header>UnPublished</Accordion.Header>
+              <Accordion.Header>Unpublished</Accordion.Header>
               <Accordion.Body>
                 {blogItems.map((item, i) => {
                   return (
