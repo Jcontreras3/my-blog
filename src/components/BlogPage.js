@@ -36,7 +36,7 @@ export default function BlogPage() {
       </Row>
       <Row>
         <Col>
-          <Card className="mt-3" style={{ width: "18rem" }}>
+          <Card className="mt-3" style={{ width: "30rem" }}>
             <Card.Body className="BgBlue">
               <Card.Title className="text-center White">Title</Card.Title>
               <Card.Text className="White">Publish Name:</Card.Text>
@@ -62,7 +62,7 @@ export default function BlogPage() {
           </Card>
         </Col>
         <Col lg={6}>
-          <Card className="mt-3" style={{ width: "18rem" }}>
+          <Card className="mt-3" style={{ width: "30rem" }}>
             <Card.Body className="BgBlue">
               <Card.Title className="text-center White">Title</Card.Title>
               <Card.Text className="White">Publish Name:</Card.Text>
@@ -74,7 +74,7 @@ export default function BlogPage() {
       </Row>
       <Row>
         <Col lg={6}>
-          <Card className="mt-3" style={{ width: "18rem" }}>
+          <Card className="mt-3" style={{ width: "30rem" }}>
             <Card.Body className="BgBlue">
               <Card.Title className="text-center White">Title</Card.Title>
               <Card.Text className="White">Publish Name:</Card.Text>
@@ -100,7 +100,7 @@ export default function BlogPage() {
           </Card>
         </Col>
         <Col lg={6}>
-          <Card className="mt-3" style={{ width: "18rem" }}>
+          <Card className="mt-3" style={{ width: "30rem" }}>
             <Card.Body className="BgBlue">
               <Card.Title className="text-center White">Title</Card.Title>
               <Card.Text className="White">Publish Name:</Card.Text>
