@@ -9,8 +9,28 @@ import {
   Accordion,
   ListGroup,
 } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom'
+import { checkToken } from "../Services/DataService";
+
+
 export default function DashBoardPage() {
+  let navigate = useNavigate();
+
+  useEffect(() =>{
+    //on load use effect is the first thing to fire
+    //put any on load logic here.
+    //Will only fire once if nothing is inside the dependency array
+    if(!checkToken()){
+      navigate("/Login");
+    }
+  },[])
+
+
+
+
+
+
   const [blogItems, setBlogItems] = useState([
     {
       Id: 1,
@@ -71,7 +91,7 @@ export default function DashBoardPage() {
   const handleClose = () => setShow(false);
   const handleShow = (e) => {
     setShow(true);
-    if (e.target.textContent == "Add Blog Item") {
+    if (e.target.textContent === "Add Blog Item") {
       setEditBool(false);
     } else {
       setEditBool(true);

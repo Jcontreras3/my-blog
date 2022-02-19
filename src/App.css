@@ -37,12 +37,17 @@
   }
 }
 
-.BgBlue{
-  background-color: blue;
+.BgSilver{
+  background-color: silver !important;
 }
 .White{
   color: White !important;
 }
 .Blue{
   color: blue !important;
+}
+
+.Border{
+  border-radius: 5;
+  padding: 50;
 }

@@ -1,44 +1,55 @@
-import React from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  InputGroup,
-  FormControl,
-  Card,
-} from "react-bootstrap";
+import React, {useState} from "react";
+import { useNavigate } from "react-router-dom";
+import { Container, Row, Col, Button, Form } from "react-bootstrap";
+
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-export default function loginPage() {
+export default function LoginPage() {
+  let navigate = useNavigate();
+  const [Username, setUsername] = useState("");
+  const [Password, setPassword] = useState("");
+
+  const handleSubmit = () => {
+    let userData = {
+      Username,
+      Password,
+    };
+    console.log(userData);
+  };
+
   return (
     <Container>
       <Row>
-        <Col className="d-flex justify-content-center mt-5">
-          <Card style={{ width: "18rem" }}>
-            <Card.Title className="text-center mt-3">
-              Login to your account
-            </Card.Title>
-            <Card.Body>
-              <InputGroup className="mb-3">
-                <FormControl
-                  placeholder="Enter Email"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </InputGroup>
-              <InputGroup className="mb-3">
-                <FormControl
-                  placeholder="Enter In Password"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </InputGroup>
-              <Button className="mx-3 Positioning">Login</Button>
-              <Card.Link href="Account">Create Account?</Card.Link>
-            </Card.Body>
-          </Card>
+        <Col
+          className="mt-5 BgSilver Border"
+          // style={{ backroundColor: 'gray', borderRadius: 5, padding: 50 }}
+        >
+          <h1>Login</h1>
+          <Form>
+            <Form.Group className="mb-3" controlId="Username">
+              <Form.Label>Username</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter Username"
+                onChange={({ target }) => setUsername(target.value)}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="Password">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                onChange={({ target: { value } }) => setPassword(value)}
+              />
+            </Form.Group>
+            <Button variant="primary" onClick={handleSubmit}>
+              Submit
+            </Button>
+          </Form>
+          <h4>Don't have an account?</h4>
+          <Button onClick={() => navigate("/Account")}>Create Account</Button>
         </Col>
       </Row>
-      </Container>
+    </Container>
   );
 }

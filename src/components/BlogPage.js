@@ -68,26 +68,26 @@ export default function BlogPage() {
               <>
                 {i % 2 == 0 ? (
                   <>
-                    <Row>
+                    <Row className="mt-4">
                       <Col md={6}>
                         <Row>
                           <Col
                             md={12}
-                            className="d-flex justify-content-center"
+                            className="d-flex justify-content-center White"
                           >
                             Title
                           </Col>
                           <Col md={12}>
-                            <Row>
+                            <Row className="mt-4">
                               <Col
                                 md={6}
-                                className="d-flex justify-content-center"
+                                className="d-flex justify-content-center White"
                               >
                                 Publisher Name
                               </Col>
                               <Col
                                 md={6}
-                                className="d-flex justify-content-center"
+                                className="d-flex justify-content-center White"
                               >
                                 Date
                               </Col>
@@ -95,42 +95,42 @@ export default function BlogPage() {
                           </Col>
                           <Col
                             md={12}
-                            className="d-flex justify-content-center"
+                            className="d-flex justify-content-center White"
                           >
                             image
                           </Col>
                         </Row>
                       </Col>
-                      <Col md={6} className="d-flex justify-content-center">
+                      <Col md={6} className="d-flex justify-content-center White">
                         desc
                       </Col>
                     </Row>
                   </>
                 ) : (
                   <>
-                    <Row>
-                      <Col md={6} className="d-flex justify-content-center">
+                    <Row className="mt-4">
+                      <Col md={6} className="d-flex justify-content-center White">
                         desc
                       </Col>
                       <Col md={6}>
                         <Row>
                           <Col
                             md={12}
-                            className="d-flex justify-content-center"
+                            className="d-flex justify-content-center White"
                           >
                             Title
                           </Col>
                           <Col md={12}>
-                            <Row>
+                            <Row className="mt-4">
                               <Col
                                 md={6}
-                                className="d-flex justify-content-center"
+                                className="d-flex justify-content-center White"
                               >
                                 Publisher Name
                               </Col>
                               <Col
                                 md={6}
-                                className="d-flex justify-content-center"
+                                className="d-flex justify-content-center White"
                               >
                                 Date
                               </Col>
@@ -138,7 +138,7 @@ export default function BlogPage() {
                           </Col>
                           <Col
                             md={12}
-                            className="d-flex justify-content-center"
+                            className="d-flex justify-content-center White"
                           >
                             image
                           </Col>
