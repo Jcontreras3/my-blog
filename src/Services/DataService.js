@@ -26,4 +26,23 @@ async function createAccount(createdUser){
     let data = await res.json();
 }
 
-export {checkToken, createAccount};
+
+async function LoginToAccount(userLogin){
+    let res = await fetch('http://localhost:5096/User/Login',{
+        method: "POST",
+        headers:{
+            'Content-Type':"application/json"
+        },
+        body:JSON.stringify(userLogin)
+    });
+    if(!res.ok)
+    {
+        const message = `An Error has Occurred ${res.status}`
+        throw new Error(message)
+    }
+
+    let data = await res.json();
+}
+
+
+export {checkToken, createAccount, LoginToAccount};
