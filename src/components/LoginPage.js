@@ -1,6 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import { GetLoggedInUserData, Login } from "../Services/DataService";
 
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 export default function LoginPage() {
@@ -8,12 +9,20 @@ export default function LoginPage() {
   const [Username, setUsername] = useState("");
   const [Password, setPassword] = useState("");
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     let userData = {
       Username,
       Password,
     };
-    console.log(userData);
+    let token = await Login(userData);
+    console.log(token);
+    if (token.token != null) {
+      localStorage.setItem("Token", token.token);
+      GetLoggedInUserData(Username);
+      navigate("/DashBoard");
+    }
+    Login(userData);
+    // console.log(userData);
   };
 
   return (
